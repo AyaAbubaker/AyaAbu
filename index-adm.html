@@ -394,7 +394,7 @@
 
     // الاستماع الفوري لقاعدة البيانات لجلب التبريكات (wishes)
     function startListeners() {
-const wishesRef = collection(db, 'aya_wishes');
+const wishesRef = collection(db, 'wishes');
       onSnapshot(wishesRef, (snapshot) => {
         const wishesList = [];
         snapshot.forEach((doc) => {
